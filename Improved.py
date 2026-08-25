@@ -1,12 +1,12 @@
 while True:
     KM = float(input("Please enter distance in kilometers: " ))
-    #this is the user input
     Miles = 0.621371
     Converted_Distance = KM*Miles
-     #We multiplied the given KM by how much 1km=mile
-    print("The distance in miles is: ", Converted_Distance)
+    print("The distance in miles is: ", Converted_Distance, "Miles")
     
-    compute_again = input("Do you want to convert again? (yes/no): ").lower()   
-    if compute_again != 'yes':
+    compute_again = input("Do you want to convert again? (yes/no): ") 
+    if compute_again == 'yes' :
+        print("Okay!")
+    else:
         print("Goodbye!")
         break
